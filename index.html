@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ColleeBean - Color Scheme Generator</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.css'>
+<link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        ColleeBean - Color Scheme Generator
+      </h1>
+      <nav class="level is-desktop">
+        <div class="level-left">
+        <div class="level-item has-text-centered">
+          <div>
+            <input class="input is-rounded no-border" type="text" name="mainColor" id="mainColor" placeholder="#000000">
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <button class="button is-rounded is-primary" id="mainColorBtn" onclick="generateClick()" >Generate</button>
+          </div>
+        </div>
+        </div>
+        <div class="level-right">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="instructions">Hit [<kbd class="key1">Space</kbd>] for a new palette</p>
+          </div>
+        </div>
+      </div>
+      </nav>
+      <div class="container">
+        <h5 class="subtitle is-5">Analogous Colors</h5>
+      <div class="columns is-desktop is-1 is-centered">
+        <div class="column">
+          <div id="analogouscolor1"></div>
+          <div class="analogoushex"></div>
+        </div>
+        <div class="column">
+          <div id="analogouscolor2"></div>
+          <div class="analogoushex"></div>
+        </div>
+        <div class="column">
+          <div id="analogouscolor3"></div>
+          <div class="analogoushex"></div>
+        </div>
+        <div class="column">
+          <div id="analogouscolor4"></div>
+          <div class="analogoushex"></div>
+        </div>
+        <div class="column">
+          <div id="analogouscolor5"></div>
+          <div class="analogoushex"></div>
+        </div>
+        <div class="column">
+          <div id="analogouscolor6"></div>
+          <div class="analogoushex"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <h5 class="subtitle is-5">Monochromatic Colors</h5>
+      <div class="columns is-desktop is-1 is-centered">
+        <div class="column">
+          <div id="monochromaticcolor1"></div>
+          <div class="monochromatichex"></div>
+        </div>
+        <div class="column">
+          <div id="monochromaticcolor2"></div>
+          <div class="monochromatichex"></div>
+        </div>
+        <div class="column">
+          <div id="monochromaticcolor3"></div>
+          <div class="monochromatichex"></div>
+        </div>
+        <div class="column">
+          <div id="monochromaticcolor4"></div>
+          <div class="monochromatichex"></div>
+        </div>
+        <div class="column">
+          <div id="monochromaticcolor5"></div>
+          <div class="monochromatichex"></div>
+        </div>
+        <div class="column">
+          <div id="monochromaticcolor6"></div>
+          <div class="monochromatichex"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <h5 class="subtitle is-5">Split Component Colors</h5>
+      <div class="columns is-desktop is-1 is-centered">
+        <div class="column">
+          <div id="splitcomplementcolor1"></div>
+          <div class="splitcomplementhex"></div>
+        </div>
+        <div class="column">
+          <div id="splitcomplementcolor2"></div>
+          <div class="splitcomplementhex"></div>
+        </div>
+        <div class="column">
+          <div id="splitcomplementcolor3"></div>
+          <div class="splitcomplementhex"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <h5 class="subtitle is-5">Triad Colors</h5>
+      <div class="columns is-desktop is-1 is-centered">
+        <div class="column">
+          <div id="triadcolor1"></div>
+          <div class="triadhex"></div>
+        </div>
+        <div class="column">
+          <div id="triadcolor2"></div>
+          <div class="triadhex"></div>
+        </div>
+        <div class="column">
+          <div id="triadcolor3"></div>
+          <div class="triadhex"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <h5 class="subtitle is-5">Tetrad Colors</h5>
+      <div class="columns is-desktop is-1 is-centered">
+        <div class="column">
+          <div id="tetradcolor1"></div>
+          <div class="tetradhex"></div>
+        </div>
+        <div class="column">
+          <div id="tetradcolor2"></div>
+          <div class="tetradhex"></div>
+        </div>
+        <div class="column">
+          <div id="tetradcolor3"></div>
+          <div class="tetradhex"></div>
+        </div>
+        <div class="column">
+          <div id="tetradcolor4"></div>
+          <div class="tetradhex"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <h5 class="subtitle is-5">Complement Colors</h5>
+      <div class="columns is-desktop is-1 is-centered">
+        <div class="column">
+          <div id="complementcolor1"></div>
+          <div class="complementhex"></div>
+        </div>
+        <div class="column">
+          <div id="complementcolor2"></div>
+          <div class="complementhex"></div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <script  src="./tinycolor.js"></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>

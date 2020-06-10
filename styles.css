@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fcfcfc;
+  color: #131720;
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align : center;
+}
+
+.column {
+  overflow: hidden;
+  width: 33%;
+}
+
+
+[id^=analogouscolor] {
+  border-radius: 7%;
+  box-sizing: border-box;
+  margin: 0.25em;
+  position: relative;
+  width: 4.5em;
+  height: 4.5em;
+}
+
+[id^=monochromaticcolor] {
+  border-radius: 7%;
+  box-sizing: border-box;
+  margin: 0.25em;
+  position: relative;
+  width: 4.5em;
+  height: 4.5em;
+}
+
+[id^=splitcomplementcolor] {
+  border-radius: 7%;
+  box-sizing: border-box;
+  margin: 0.25em;
+  position: relative;
+  width: 4.5em;
+  height: 4.5em;
+}
+
+[id^=triadcolor] {
+  border-radius: 7%;
+  box-sizing: border-box;
+  margin: 0.25em;
+  position: relative;
+  width: 4.5em;
+  height: 4.5em;
+}
+
+[id^=tetradcolor] {
+  border-radius: 7%;
+  box-sizing: border-box;
+  margin: 0.25em;
+  position: relative;
+  width: 4.5em;
+  height: 4.5em;
+}
+
+[id^=complementcolor] {
+  border-radius: 7%;
+  box-sizing: border-box;
+  margin: 0.25em;
+  position: relative;
+  width: 4.5em;
+  height: 4.5em;
+}
+
+body.darkBackground {
+    background: #131720;
+    color: #fefefe;
+    font-weight: 400;
+}
+
+.darkBackground .title {
+    font-weight: 400;
+}
